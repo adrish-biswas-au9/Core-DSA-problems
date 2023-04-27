@@ -3,6 +3,7 @@ using namespace std;
 
 void arrayReverse()
 {
+  // int arr[5] = {3, 5, 7, 8, 9};
   cout << "Enter the size of the array:\n";
   int size;
   cin >> size;
