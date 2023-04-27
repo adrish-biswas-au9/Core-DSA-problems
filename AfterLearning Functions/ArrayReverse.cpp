@@ -1,21 +1,20 @@
 #include <iostream>
 using namespace std;
 
-void arrayBasicOperations()
+void arrayReverse()
 {
-  cout << "Enter the size of the array\n";
+  cout << "Enter the size of the array:\n";
   int size;
   cin >> size;
   int arr[size];
-
   for (int i = 0; i < size; i++)
   {
     cout << "Enter the " << (i + 1) << "th value of the array:\n";
     cin >> arr[i];
   }
-  cout << "The Array:\n";
+  cout << "The Array in reverse order:\n";
   cout << "{ ";
-  for (int i = 0; i < size; i++)
+  for (int i = size - 1; i >= 0; i--)
   {
     cout << arr[i] << ", ";
   }
@@ -25,6 +24,6 @@ void arrayBasicOperations()
 
 int main()
 {
-  arrayBasicOperations();
+  arrayReverse();
   return 0;
 }
