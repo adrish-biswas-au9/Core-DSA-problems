@@ -25,10 +25,11 @@ int makeProductOne(int arr[], int N)
       steps += 1;
     }
   }
-  if (multiplier != 1 && zeros_count == 0)
+  if (multiplier == 1 || zeros_count > 0)
   {
-    steps += 2;
+    return steps;
   }
+  steps += 2;
   return steps;
 }
 
