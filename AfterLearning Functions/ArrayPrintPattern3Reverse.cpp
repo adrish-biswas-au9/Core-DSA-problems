@@ -3,7 +3,7 @@ using namespace std;
 
 void printArrayReversePattern(int arr[], int size)
 {
-  cout << "The pattern1 print of the array in reverse order:\n";
+  cout << "The pattern print of the array in reverse order:\n";
   for (int i = 1; i <= size; i++)
   {
     cout << "{ ";
