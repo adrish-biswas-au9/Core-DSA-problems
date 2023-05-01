@@ -4,20 +4,18 @@ using namespace std;
 void sort012(int a[], int n)
 {
   // https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
-  int count_zeros = 0;
-  int count_ones = 0;
-  int count_twos = 0;
+  int count_zeros = 0, count_ones = 0, count_twos = 0;
   for (int i = 0; i < n; i++)
   {
     if (a[i] == 0)
     {
       count_zeros++;
     }
-    if (a[i] == 1)
+    else if (a[i] == 1)
     {
       count_ones++;
     }
-    if (a[i] == 2)
+    else
     {
       count_twos++;
     }
@@ -37,13 +35,13 @@ void sort012(int a[], int n)
   //}
 
   // if(count_twos > 0) {
-  for (int i = (count_zeros + count_ones); i < count_zeros + count_ones + count_twos; i++)
+  for (int i = count_zeros + count_ones; i < n; i++)
   {
     a[i] = 2;
   }
   //}
   // -------GFG solution ends here-------
-  // extra part for display purpose was not required in the GFG solution
+  // extra part for display purpose; was not required in the GFG solution:
   cout << "The array after sorting:\n";
   cout << "{ ";
   for (int i = 0; i < n; i++)
