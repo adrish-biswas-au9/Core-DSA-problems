@@ -4,6 +4,8 @@ using namespace std;
 void arrayFindDuplicateinN(int arr[], int n)
 {
   int count[n];
+  // int count[4] = {0}; alternative way of declaring an array with all values as 0, but when the size is not a parameter
+  // int count[] = {0, 0, 0, 0}; alternative way of declaring an array with all values as 0, but when the size is not a parameter
   for (int i = 0; i < n; i++)
   {
     count[i] = 0;
