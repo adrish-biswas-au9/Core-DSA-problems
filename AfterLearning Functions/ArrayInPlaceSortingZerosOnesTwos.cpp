@@ -49,6 +49,7 @@ void sort012(int a[], int n)
     cout << a[i] << ", ";
   }
   cout << "}\n";
+  return;
 }
 
 int main()
