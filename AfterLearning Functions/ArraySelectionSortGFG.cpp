@@ -29,6 +29,8 @@ void selectionSort(int arr[], int n)
     arr[index_for_smallest_for_each_step] = arr[i];
     arr[i] = temp;
   }
+  // -------GFG solution ends here-------
+  // extra part for display purpose; was not required in the GFG solution:
   cout << "The sorted array:\n";
   cout << "{ ";
   for (int i = 0; i < n; i++)
