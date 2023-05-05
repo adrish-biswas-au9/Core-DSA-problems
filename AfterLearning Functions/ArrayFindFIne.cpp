@@ -3,6 +3,7 @@ using namespace std;
 
 long long int totalFine(int n, int date, int car[], int fine[])
 {
+  // https://practice.geeksforgeeks.org/problems/find-the-fine4353/1?page=2&sortBy=submissions&searchQuery=Find
   long long totalFineAmount = 0;
   int isDateOdd = date % 2;
   switch (isDateOdd)
