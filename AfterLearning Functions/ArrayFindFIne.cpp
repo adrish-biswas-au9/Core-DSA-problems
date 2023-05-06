@@ -34,7 +34,7 @@ long long int totalFine(int n, int date, int car[], int fine[])
   for (int i = 0; i < n; i++)
   {
     int isCarOdd = car[i] % 2;
-    if (isDateOdd != isCarOdd)
+    if (isDateOdd != isCarOdd) // isDateOdd ^ isCarOdd
     {
       totalFineAmount += fine[i];
     }
