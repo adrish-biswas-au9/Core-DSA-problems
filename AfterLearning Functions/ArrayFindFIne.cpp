@@ -3,34 +3,41 @@ using namespace std;
 
 long long int totalFine(int n, int date, int car[], int fine[])
 {
-  // https://practice.geeksforgeeks.org/problems/find-the-fine4353/1?page=2&sortBy=submissions&searchQuery=Find
-  long long totalFineAmount = 0;
+  long long int totalFineAmount = 0;
   int isDateOdd = date % 2;
-  switch (isDateOdd)
-  {
-  case 1:
-  {
-    for (int i = 0; i < n; i++)
-    {
-      if (car[i] % 2 == 0)
-      {
-        totalFineAmount += fine[i];
-      }
-    }
-    break;
-  }
+  // switch(isDateOdd)
+  // {
+  //     case 1:
+  //     {
+  //         for(int i = 0; i < n; i++)
+  //         {
+  //             if(car[i] % 2 == 0)
+  //             {
+  //                 totalFineAmount += fine[i];
+  //             }
+  //         }
+  //         break;
+  //     }
 
-  case 0:
+  //     case 0:
+  //     {
+  //         for(int i = 0; i < n; i++)
+  //         {
+  //             if(car[i] % 2 != 0)
+  //             {
+  //                 totalFineAmount += fine[i];
+  //             }
+  //         }
+  //         break;
+  //     }
+  // }
+  for (int i = 0; i < n; i++)
   {
-    for (int i = 0; i < n; i++)
+    int isCarOdd = car[i] % 2;
+    if (isDateOdd != isCarOdd)
     {
-      if (car[i] % 2 != 0)
-      {
-        totalFineAmount += fine[i];
-      }
+      totalFineAmount += fine[i];
     }
-    break;
-  }
   }
   return totalFineAmount;
 }
